@@ -98,4 +98,29 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  /* Скрыть скролл бар */
+  html {
+    overflow-x: hidden;
+  }
+
+  /* WebKit браузеры (Chrome, Safari, Edge) */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Firefox */
+  html {
+    scrollbar-width: none;
+  }
+
+  /* Для всех элементов */
+  * {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  *::-webkit-scrollbar {
+    display: none;
+  }
 }
